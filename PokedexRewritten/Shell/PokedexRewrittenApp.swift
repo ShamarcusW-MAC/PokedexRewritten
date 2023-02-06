@@ -2,16 +2,18 @@
 //  PokedexRewrittenApp.swift
 //  PokedexRewritten
 //
-//  Created by Consultant on 1/27/23.
+//  Created by Sha'Marcus Walker on 1/27/23.
 //
 
 import SwiftUI
 
 @main
 struct PokedexRewrittenApp: App {
+    
+    let app = ApplicationController()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView(pokedexViewModel: app.pokemonViewModel)
         }
     }
 }
